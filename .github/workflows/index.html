@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Montevideo Middle School — Sports & Contact Work</title>
+  <style>
+    :root{
+      --bg:#f6f7f9;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --accent:#1f2937;
+      --border:#e6e7ea;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:var(--bg);
+      color:var(--accent);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+    }
+
+    header{
+      background:linear-gradient(180deg, #ffffff 0%, #f2f4f7 100%);
+      border-bottom:1px solid var(--border);
+      padding:28px 16px;
+      text-align:center;
+    }
+    header h1{margin:0;font-size:1.5rem;letter-spacing: -0.5px;}
+    header p{margin:.4rem 0 0;color:var(--muted)}
+
+    main{max-width:1100px;margin:28px auto;padding:0 16px 80px;}
+
+    .grid{
+      display:grid;
+      grid-template-columns: 1fr 360px;
+      gap:20px;
+    }
+    @media (max-width:980px){ .grid{grid-template-columns:1fr} }
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:10px;
+      padding:18px;
+      box-shadow:0 6px 18px rgba(31,41,55,0.04);
+    }
+
+    h2{margin:0 0 12px;font-size:1.05rem}
+    p.lead{margin:0 0 12px;color:var(--muted)}
+
+    /* Tables */
+    .table-wrap{overflow-x:auto;border-radius:8px;border:1px solid var(--border)}
+    table{
+      width:100%;
+      border-collapse:collapse;
+      background:var(--card);
+    }
+    thead th{
+      text-align:left;
+      font-weight:600;
+      padding:10px 12px;
+      background:linear-gradient(180deg,#fbfbfb,#f2f4f7);
+      border-bottom:1px solid var(--border);
+      color:var(--accent);
+      font-size:0.95rem;
+    }
+    tbody td{
+      padding:10px 12px;
+      border-bottom:1px dashed #efeff2;
+      font-size:0.95rem;
+      color:var(--accent);
+    }
+    tbody tr:last-child td{border-bottom:none}
+
+    /* Responsive table */
+    @media (max-width:600px){
+      table, thead, tbody, th, td, tr{display:block}
+      thead{display:none}
+      tbody td{
+        display:block;
+        padding:10px 12px;
+        border-bottom:1px solid #f1f3f5;
+        position:relative;
+      }
+      tbody td::before{
+        content: attr(data-label);
+        display:block;
+        font-weight:600;
+        margin-bottom:6px;
+        color:var(--muted);
+      }
+    }
+
+    /* Map */
+    .map {
+      border-radius:8px;
+      overflow:hidden;
+      border:1px solid var(--border);
+      margin-top:12px;
+    }
+    .map iframe{display:block;width:100%;height:320px;border:0}
+    .links{margin-top:10px}
+    .links a{color:#0b6dfd;text-decoration:none;font-size:0.95rem}
+
+    footer{max-width:1100px;margin:28px auto;padding:0 16px 60px;color:var(--muted);font-size:0.9rem}
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Montevideo Middle School</h1>
+    <p>Sports Schedules & Contact Work Locations — 2025–2026</p>
+  </header>
+
+  <main>
+    <div class="grid">
+      <!-- LEFT COLUMN -->
+      <div>
+        <!-- Varsity Football Schedule -->
+        <section class="card">
+          <h2>🏈 Spotswood High School — Varsity Football (2025–2026)</h2>
+          <p class="lead">Updated Varsity Football schedule for the 2025/2026 season.</p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Date</th><th>Opponent</th><th>Location</th><th>Time</th></tr>
+              </thead>
+              <tbody>
+                <tr><td data-label="Date">Aug 29, 2025</td><td data-label="Opponent">Waynesboro</td><td data-label="Location">Home (Spotswood HS)</td><td data-label="Time">7:00 PM</td></tr>
+                <tr><td data-label="Date">Sep 5, 2025</td><td data-label="Opponent">Wilson Memorial</td><td data-label="Location">Away</td><td data-label="Time">7:00 PM</td></tr>
+                <tr><td data-label="Date">Sep 12, 2025</td><td data-label="Opponent">Madison County</td><td data-label="Location">Away</td><td data-label="Time">7:00 PM</td></tr>
+                <tr><td data-label="Date">Sep 19, 2025</td><td data-label="Opponent">Broadway</td><td data-label="Location">Home (Spotswood HS)</td><td data-label="Time">7:00 PM</td></tr>
+                <tr><td data-label="Date">Sep 26, 2025</td><td data-label="Opponent">William Monroe</td><td data-label="Location">Home (Spotswood HS)</td><td data-label="Time">7:00 PM</td></tr>
+                <tr><td data-label="Date">Oct 3, 2025</td><td data-label="Opponent">Broadway</td><td data-label="Location">Away</td><td data-label="Time">7:00 PM</td></tr>
+                <tr><td data-label="Date">Oct 10, 2025</td><td data-label="Opponent">East Rockingham</td><td data-label="Location">Home (Spotswood HS)</td><td data-label="Time">7:00 PM</td></tr>
+                <tr><td data-label="Date">Oct 17, 2025</td><td data-label="Opponent">Harrisonburg</td><td data-label="Location">Away</td><td data-label="Time">7:00 PM</td></tr>
+                <tr><td data-label="Date">Oct 24, 2025</td><td data-label="Opponent">Rocktown</td><td data-label="Location">Home (Spotswood HS)</td><td data-label="Time">7:00 PM</td></tr>
+                <tr><td data-label="Date">Nov 7, 2025</td><td data-label="Opponent">Turner Ashby</td><td data-label="Location">Away</td><td data-label="Time">7:00 PM</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- JV Football Schedule -->
+        <section class="card" style="margin-top:18px">
+          <h2>🏈 Spotswood High School — JV Football (2025–2026)</h2>
+          <p class="lead">Updated JV Football schedule for the 2025/2026 season. All games start at 6:00 PM unless noted.</p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Date</th><th>Opponent</th><th>Location</th><th>Time</th></tr>
+              </thead>
+              <tbody>
+                <tr><td data-label="Date">Aug 28, 2025</td><td data-label="Opponent">Waynesboro</td><td data-label="Location">Away</td><td data-label="Time">6:00 PM</td></tr>
+                <tr><td data-label="Date">Sep 3, 2025</td><td data-label="Opponent">Wilson Memorial</td><td data-label="Location">Home (Spotswood HS)</td><td data-label="Time">6:00 PM</td></tr>
+                <tr><td data-label="Date">Sep 10, 2025</td><td data-label="Opponent">Madison County</td><td data-label="Location">Home (Spotswood HS)</td><td data-label="Time">6:00 PM</td></tr>
+                <tr><td data-label="Date">Sep 18, 2025</td><td data-label="Opponent">Broadway</td><td data-label="Location">Away</td><td data-label="Time">6:00 PM</td></tr>
+                <tr><td data-label="Date">Sep 25, 2025</td><td data-label="Opponent">William Monroe</td><td data-label="Location">Away</td><td data-label="Time">6:00 PM</td></tr>
+                <tr><td data-label="Date">Oct 2, 2025</td><td data-label="Opponent">Broadway</td><td data-label="Location">Home (Spotswood HS)</td><td data-label="Time">6:45 PM</td></tr>
+                <tr><td data-label="Date">Oct 9, 2025</td><td data-label="Opponent">East Rockingham</td><td data-label="Location">Away</td><td data-label="Time">6:45 PM</td></tr>
+                <tr><td data-label="Date">Oct 16, 2025</td><td data-label="Opponent">Harrisonburg</td><td data-label="Location">Home (Spotswood HS)</td><td data-label="Time">6:45 PM</td></tr>
+                <tr><td data-label="Date">Oct 23, 2025</td><td data-label="Opponent">Rocktown</td><td data-label="Location">Home (Spotswood HS)</td><td data-label="Time">6:45 PM</td></tr>
+                <tr><td data-label="Date">Nov 3, 2025</td><td data-label="Opponent">Turner Ashby</td><td data-label="Location">Home (Spotswood HS)</td><td data-label="Time">6:45 PM</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Volleyball Schedule -->
+        <section class="card" style="margin-top:18px">
+          <h2>🏐 Montevideo Middle School — Volleyball (2025–2026)</h2>
+          <p class="lead">All games begin at 4:30 PM.</p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Date</th><th>Opponent</th><th>Location</th><th>Time</th></tr>
+              </thead>
+              <tbody>
+                <tr><td data-label="Date">Sep 2, 2025</td><td data-label="Opponent">J. Frank Hillyard</td><td data-label="Location">Home</td><td data-label="Time">4:30 PM</td></tr>
+                <tr><td data-label="Date">Sep 4, 2025</td><td data-label="Opponent">Pence</td><td data-label="Location">Home</td><td data-label="Time">4:30 PM</td></tr>
+                <tr><td data-label="Date">Sep 9, 2025</td><td data-label="Opponent">Thomas Harrison</td><td data-label="Location">Away</td><td data-label="Time">4:30 PM</td></tr>
+                <tr><td data-label="Date">Sep 11, 2025</td><td data-label="Opponent">Elkton</td><td data-label="Location">Home</td><td data-label="Time">4:30 PM</td></tr>
+                <tr><td data-label="Date">Sep 16, 2025</td><td data-label="Opponent">Skyline</td><td data-label="Location">Away</td><td data-label="Time">4:30 PM</td></tr>
+                <tr><td data-label="Date">Sep 18, 2025</td><td data-label="Opponent">Pence</td><td data-label="Location">Away</td><td data-label="Time">4:30 PM</td></tr>
+                <tr><td data-label="Date">Sep 23, 2025</td><td data-label="Opponent">Thomas Harrison</td><td data-label="Location">Home</td><td data-label="Time">4:30 PM</td></tr>
+                <tr><td data-label="Date">Sep 25, 2025</td><td data-label="Opponent">Skyline</td><td data-label="Location">Home</td><td data-label="Time">4:30 PM</td></tr>
+                <tr><td data-label="Date">Sep 30, 2025</td><td data-label="Opponent">Elkton</td><td data-label="Location">Away</td><td data-label="Time">4:30 PM</td></tr>
+                <tr><td data-label="Date">Oct 2, 2025</td><td data-label="Opponent">J. Frank Hillyard</td><td data-label="Location">Away</td><td data-label="Time">4:30 PM</td></tr>
+                <tr><td data-label="Date">Oct 4, 2025 (Sat)</td><td data-label="Opponent">Massanutten District Tournament</td><td data-label="Location">Hosted by MMS @ Spotswood HS</td><td data-label="Time">TBA</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- Cross Country Schedule -->
+        <section class="card" style="margin-top:18px">
+          <h2>🏃 Montevideo Middle School — Cross Country (2025–2026)</h2>
+          <p class="lead">Meets start at 4:30 PM unless otherwise noted.</p>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Date</th><th>Opponent / Event</th><th>Location</th><th>Time</th></tr>
+              </thead>
+              <tbody>
+                <tr><td data-label="Date">Sep 4, 2025</td><td data-label="Opponent / Event">Skyline</td><td data-label="Location">Away</td><td data-label="Time">4:30 PM</td></tr>
+                <tr><td data-label="Date">Sep 12, 2025</td><td data-label="Opponent / Event">J. Frank Hillyard</td><td data-label="Location">Away</td><td data-label="Time">4:30 PM</td></tr>
+                <tr><td data-label="Date">Sep 18, 2025</td><td data-label="Opponent / Event">Elkton & J. Frank Hillyard</td><td data-label="Location">Home</td><td data-label="Time">4:30 PM</td></tr>
+                <tr><td data-label="Date">Sep 25, 2025</td><td data-label="Opponent / Event">Pence</td><td data-label="Location">Away</td><td data-label="Time">4:30 PM</td></tr>
+                <tr><td data-label="Date">Oct 2, 2025</td><td data-label="Opponent / Event">Pence & J. Frank Hillyard</td><td data-label="Location">Home</td><td data-label="Time">4:30 PM</td></tr>
+                <tr><td data-label="Date">Oct 8, 2025</td><td data-label="Opponent / Event">Massanutten District Championship</td><td data-label="Location">Painter Park, 1100 20th St., Grottoes, VA 24441</td><td data-label="Time">4:30 PM</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <aside>
+        <section class="card">
+          <h2>📍 Contact Work Locations & Hours</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>Location</th><th>Hours</th></tr>
+              </thead>
+              <tbody>
+                <tr><td data-label="Location">Moxie33 Coffee Co. — Harrisonburg</td><td data-label="Hours">Tue–Fri: 6:30 AM – 5:00 PM; Sat: 8:00 AM – 2:00 PM; Sun–Mon: Closed</td></tr>
+                <tr><td data-label="Location">Cook Out — Harrisonburg</td><td data-label="Hours">Sun–Thu: 10:30 AM – 3:00 AM; Fri–Sat: 10:30 AM – 3:00 AM</td></tr>
+                <tr><td data-label="Location">Rockingham Park — Harrisonburg</td><td data-label="Hours">Mon–Fri: 8:00 AM – 8:00 PM; Sat: 11:00 AM – 2:00 PM</td></tr>
+                <tr><td data-label="Location">Mr. J's Bagels & Deli — Harrisonburg</td><td data-label="Hours">Mon–Fri: 5:30 AM – 2:00 PM; Sat–Sun: 6:00 AM – 1:45 PM</td></tr>
+                <tr><td data-label="Location">Kline's Dairy Bar — Harrisonburg</td><td data-label="Hours">Mon–Sat: 10:30 AM – 10:00 PM; Sun: 11:30 AM – 10:00 PM</td></tr>
+
+          <div class="map">
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1IiZ6Q8H6cyH2fiYP8nTCycEOB2otCsc&ehbc=2E312F" width="640" height="480"></iframe> width="640" height="480"></iframe> width="640" height="480"></iframe> 
+          </div>
+        </section>
+      </aside>
+    </div>
+  </main>
+
+</body>
+</html>
